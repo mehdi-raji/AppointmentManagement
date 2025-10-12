@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppointmentManagement.Application\AppointmentManagement.Application.csproj" />
+    <ProjectReference Include="..\AppointmentManagement.Contracts\AppointmentManagement.Contracts.csproj" />
+    <ProjectReference Include="..\AppointmentManagement.Domain\AppointmentManagement.Domain.csproj" />
+    <ProjectReference Include="..\AppointmentManagement.Infrastructure\AppointmentManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
