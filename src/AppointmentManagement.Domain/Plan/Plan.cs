@@ -1,8 +1,13 @@
-﻿using AppointmentManagement.Domain.Common;
+﻿namespace AppointmentManagement.Domain.Plan;
 
-namespace AppointmentManagement.Domain.Plan;
-
-public class Plan : Entity<short>
+public class Plan : AuditedEntity<short>
 {
-    
+    public string Name { get; } = null!;
+
+    public DateTime StartDate { get; }  
+    public DateTime EndDate { get; } 
+
+    protected Plan(short id)
+    {
+    }
 }

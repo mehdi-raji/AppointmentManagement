@@ -1,8 +1,9 @@
-﻿using AppointmentManagement.Domain.Common;
+﻿namespace AppointmentManagement.Domain.Member;
 
-namespace AppointmentManagement.Domain.Member;
-
-public class Member : Entity<byte>
+public class Member : AuditedEntity<byte>
 {
+    public string Name { get; set; } = null!;
+    public string PhoneNumber { get; set; } = null!;
+    public string NationalCode { get; set; } = null!;
     
 }

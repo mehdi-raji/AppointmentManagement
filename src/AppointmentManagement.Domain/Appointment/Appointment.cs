@@ -1,8 +1,6 @@
-﻿using AppointmentManagement.Domain.Common;
+﻿namespace AppointmentManagement.Domain.Appointment;
 
-namespace AppointmentManagement.Domain.Appointment;
-
-public class Appointment : Entity<int>
+public class Appointment : AuditedEntity<int>
 {
-    
+    public DateTime DateTime { get; set; }
 }
