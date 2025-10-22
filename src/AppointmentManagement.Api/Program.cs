@@ -1,9 +1,11 @@
 using AppointmentManagement.Api;
+using AppointmentManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddPresentation();
+    .AddPresentation()
+    .AddInfrastructure();
 
 {
     var app = builder.Build();
