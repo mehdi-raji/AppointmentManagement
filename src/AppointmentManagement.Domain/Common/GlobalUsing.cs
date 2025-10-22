@@ -1,2 +1,1 @@
-﻿global using CSharpFunctionalExtensions;
-global using AppointmentManagement.Domain.Common;
+﻿global using AppointmentManagement.Domain.Common;
